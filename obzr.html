@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила борьбы с социально-психологическими опасностями</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+        body {
+            background-color: #12181f; /* Глубокий темно-синий */
+            color: #d0d8e0; /* Спокойный серо-голубой текст */
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 50px;
+            color: #66fcf1; /* Мягкий бирюзовый */
+            text-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+            animation: slow-pulse 4s infinite ease-in-out;
+            letter-spacing: 5px;
+        }
+
+        @keyframes slow-pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        header p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .rule-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 40px;
+            border: 1px solid #334155; /* Приглушенный сине-серый бордер */
+            padding: 25px;
+            background-color: rgba(23, 31, 42, 0.5);
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .rule-section:hover {
+            border-color: #66fcf1;
+            transform: translateY(-5px);
+        }
+
+        .icon-container {
+            flex-shrink: 0;
+            color: #66fcf1;
+            margin-top: 5px;
+        }
+
+        .rule-section h2 {
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #ffffff; /* Чистый белый для заголовков */
+            font-weight: 400;
+        }
+
+        .rule-section p {
+            font-size: 1em;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* --- МОБИЛЬНАЯ АДАПТАЦИЯ --- */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em; /* Уменьшаем главный заголовок */
+            }
+
+            .logo {
+                font-size: 40px; /* Уменьшаем логотип */
+            }
+
+            header p {
+                font-size: 1em; /* Уменьшаем подзаголовок */
+            }
+
+            .rule-section {
+                flex-direction: column; /* Ставим иконку над текстом */
+                align-items: center; /* Центрируем иконку */
+                text-align: center; /* Центрируем текст правил */
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .icon-container {
+                margin-top: 0;
+                margin-bottom: 10px; /* Добавляем отступ под иконкой */
+            }
+
+            .rule-section h2 {
+                font-size: 1.4em;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <canvas class="background-animation"></canvas>
+
+    <div class="container">
+        <header>
+            <div class="logo">П.Б.О.</div>
+            <h1>Правила Борьбы с Социально-Психологическими Опасностями</h1>
+            <p>Практическое руководство по укреплению ментальной устойчивости и противодействию агрессивной социальной среде.</p>
+        </header>
+
+        <section class="rule-section">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+            <div class="text-container">
+                <h2>Правило 1: Идентификация Угрозы</h2>
+                <p>Безопасность начинается с распознавания. Учитесь видеть не только явную агрессию, но и скрытые формы давления: сарказм, обесценивание, газлайтинг (попытки заставить вас сомневаться в собственном восприятии), пассивную агрессию. Систематический буллинг часто состоит именно из таких "мелких" атак. Главный индикатор — ваши чувства. Если после общения с человеком вы регулярно чувствуете себя подавленным, опустошенным или виноватым, это сигнал тревоги.</p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="text-container">
+                <h2>Правило 2: Возведение Личных Границ</h2>
+                <p>Границы — это не стены, а правила безопасного взаимодействия. Они защищают ваше личное пространство, время и эмоции. Установка границ — это навык. Начните с малого. Вежливо, но твердо говорите "нет" на неудобные просьбы. Обозначайте неприемлемое поведение: "Мне неприятно, когда на меня повышают голос". В ситуации буллинга четкие границы лишают агрессора власти. Вы показываете, что его действия имеют последствия и не будут проигнорированы.</p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.94 13.06A9 9 0 1 1 11.99 3c2.27 0 4.4 1.01 5.91 2.69"></path><path d="M20 3v6h-6"></path><circle cx="12" cy="12" r="4"></circle></svg>
+            </div>
+            <div class="text-container">
+                <h2>Правило 3: Эмоциональная Саморегуляция</h2>
+                <p>Цель агрессора — вывести вас из равновесия, так как эмоциональным человеком легче управлять. Развивайте навык "контейнирования" эмоций — не подавления, а осознанного проживания. Сделайте паузу перед ответом. Используйте технику заземления: мысленно назовите 5 предметов, которые видите, 4 звука, которые слышите. Это возвращает фокус с эмоций на реальность. Сохраняя спокойствие, вы оставляете контроль над ситуацией у себя.</p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="text-container">
+                <h2>Правило 4: Формирование Сети Поддержки</h2>
+                <p>Изоляция — главный союзник буллинга и психологического давления. Важно иметь "доверенную сеть" — людей, с которыми можно поделиться переживаниями без страха осуждения. Это могут быть друзья, семья или психолог. Взгляд со стороны помогает увидеть ситуацию объективно и понять, что проблема не в вас. Поддержка окружающих подтверждает вашу адекватность и дает силы для противостояния или выхода из токсичной среды.</p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><line x1="6" y1="12" x2="6" y2="12"></line><line x1="10" y1="12" x2="10" y2="12"></line><line x1="14" y1="12" x2="14" y2="12"></line></svg>
+            </div>
+            <div class="text-container">
+                <h2>Правило 5: Управление Информационным Полем</h2>
+                <p>Ваша психологическая безопасность зависит и от информации, которую вы потребляете. Практикуйте "информационную гигиену". Отписывайтесь от токсичных аккаунтов и новостных источников, которые вызывают постоянную тревогу. Ограничивайте время в социальных сетях. Не вступайте в бессмысленные онлайн-споры — это пустая трата вашего ментального ресурса. Контролируя входящие потоки, вы защищаете свое внутреннее пространство от лишнего "шума" и негатива.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const canvas = document.querySelector('.background-animation');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particlesArray = [];
+        const numberOfParticles = 70;
+
+        class Particle {
+            constructor(x, y, size, color, weight) {
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.color = color;
+                this.weight = weight;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            update() {
+                if (this.y > canvas.height) {
+                    this.y = 0 - this.size;
+                    this.x = Math.random() * canvas.width;
+                    this.weight = (Math.random() * 0.5) + 0.1;
+                }
+                this.y += this.weight;
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                let x = Math.random() * canvas.width;
+                let y = Math.random() * canvas.height;
+                let size = (Math.random() * 1.5) + 0.5;
+                let color = 'rgba(102, 252, 241, 0.3)';
+                let weight = (Math.random() * 0.5) + 0.1;
+                particlesArray.push(new Particle(x, y, size, color, weight));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+    </script>
+
+</body>
+</html>
